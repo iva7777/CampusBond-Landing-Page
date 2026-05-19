@@ -4,6 +4,8 @@ The official landing page for **CampusBond** – Your Digital Campus app. Built 
 
 🔗 **Live Demo:** [campusbond.vercel.app](https://campusbond.vercel.app)
 
+![Project Mockup](https://github.com/iva7777/CampusBond-Landing-Page/blob/main/CampusBond.jpg?raw=true)
+
 ---
 
 ## 📱 About CampusBond
