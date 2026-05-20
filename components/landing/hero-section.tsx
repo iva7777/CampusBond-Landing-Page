@@ -34,9 +34,8 @@ export function HeroSection() {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-t from-[#1A535C]/20 to-transparent" />
-      <div className="container mx-auto px-4 pt-24 pb-32 relative z-10">
+      <div className="container mx-auto px-4 pt-24 pb-16 md:pb-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo Animation */}
           <div className="flex justify-center items-center">
             <LottieAnimation />
           </div>

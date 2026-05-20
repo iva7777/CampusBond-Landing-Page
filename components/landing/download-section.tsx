@@ -153,7 +153,7 @@ export function DownloadSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <span className="capitalize">Без реклами</span>
+            <span>Без реклами</span>
           </div>
 
           <div className="flex items-center gap-2">
@@ -162,7 +162,7 @@ export function DownloadSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <span className="capitalize">Сигурност на първо място</span>
+            <span>Сигурност на първо място</span>
           </div>
         </motion.div>
       </div>

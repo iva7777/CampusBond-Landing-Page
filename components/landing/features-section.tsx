@@ -1,83 +1,111 @@
 "use client"
-
 import { motion } from "framer-motion"
-import { 
-  Calendar, 
-  MessageCircleMore, 
-  Users, 
-  BookOpen,
-  Bell, 
-  ShoppingBag
-} from "lucide-react"
 
 const features = [
   {
-    icon: Calendar,
+    index: "01",
     title: "Бъди в центъра на събитията",
-    description: "От студентски партита и гост-лекции до спортни турнири – никога повече няма да изпуснеш какво се случва в кампуса.",
-    color: "#0D91AF"
+    description:
+      "От студентски партита и гост-лекции до спортни турнири – никога повече няма да изпуснеш какво се случва в кампуса.",
+    color: "#0D91AF",
   },
   {
-    icon: BookOpen,
+    index: "02",
     title: "Учебни материали и взаимопомощ",
-    description: "Създавай или се включвай в групи за съвместно учене. Споделяй записки, обсъждай проекти и се подготвяй за изпити с колеги.",
-    color: "#a1ef76"
+    description:
+      "Споделяй записки, обсъждай проекти и се подготвяй за изпити с колеги.",
+    color: "#a1ef76",
   },
   {
-    icon: Users,
+    index: "03",
     title: "Свържи се със съмишленици",
-    description: "Намери студенти от твоето общежитие, факултет или хора със сходни интереси и хобита.",
-    color: "#52a7ef"
+    description:
+      "Намери студенти от твоето общежитие, факултет или хора със сходни интереси и хобита.",
+    color: "#52a7ef",
   },
   {
-    icon: MessageCircleMore,
+    index: "04",
     title: "Локален фийд",
-    description: "Задавай въпроси, търси съвети за преподаватели или просто сподели забавна случка от деня с цялата университетска общност.",
-    color: "#ffc2f9"
+    description:
+      "Задавай въпроси, търси съвети за преподаватели или просто сподели забавна случка от деня с цялата университетска общност.",
+    color: "#ffc2f9",
   },
   {
-    icon: Bell,
+    index: "05",
     title: "Напомняния за крайни срокове",
-    description: "Никога не пропускай краен срок с напомняния за задачи, изпити и събития в кампуса.",
-    color: "#FE9462"
+    description:
+      "Никога не пропускай краен срок с напомняния за задачи, изпити и събития в кампуса.",
+    color: "#FE9462",
   },
   {
-    icon: ShoppingBag,
+    index: "06",
     title: "Студентска борса",
-    description: "В нашата борса можеш бързо, лесно и сигурно да купуваш, продаваш или разменяш вещи директно с други колеги от кампуса.",
-    color: "#de6f6e"
-  }
-]
+    description:
+      "Купувай, продавай или разменяй вещи директно с колеги от кампуса.",
+    color: "#de6f6e",
+  },
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.15
-    }
-  }
-}
+    transition: { staggerChildren: 0.1 },
+  },
+};
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut"
-    }
-  }
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
+
+function FeatureItem({
+  feature,
+  titleSize = "text-lg",
+  descSize = "text-sm",
+}: {
+  feature: (typeof features)[0];
+  titleSize?: string;
+  descSize?: string;
+}) {
+  return (
+    <motion.div variants={itemVariants} className="flex flex-col gap-4">
+      <span
+        className="text-xs tracking-widest"
+        style={{ color: "oklch(var(--muted-foreground))" }}
+      >
+        {feature.index}
+      </span>
+
+      <span
+        className="inline-block w-2 h-2 rounded-full -mt-2"
+        style={{ backgroundColor: feature.color }}
+      />
+
+      <div className="flex flex-col gap-2">
+        <h3
+          className={`${titleSize} font-semibold leading-snug text-foreground`}
+        >
+          {feature.title}
+        </h3>
+        <p className={`${descSize} text-muted-foreground leading-relaxed`}>
+          {feature.description}
+        </p>
+      </div>
+    </motion.div>
+  )
 }
 
 export function FeaturesSection() {
-  return (
-    <section className="py-24 bg-background relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+  const [f01, f02, f03, f04, f05, f06] = features
 
-      <div className="container mx-auto px-4 relative z-10">
+  return (
+    <section className="py-24 bg-background">
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -94,43 +122,65 @@ export function FeaturesSection() {
           </p>
         </motion.div>
 
+        {/* Top row — 3 columns */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          viewport={{ once: true, margin: "-80px" }}
+          className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr_1fr] border-b border-border"
         >
-          {features.map((feature) => (
-            <motion.div
-              key={feature.title}
-              variants={itemVariants}
-              whileHover={{ y: -8, scale: 1.02 }}
-              className="group relative bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border/50"
-            >
-              <div
-                className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
-                style={{ backgroundColor: `${feature.color}20` }}
-              >
-                <feature.icon 
-                  className="w-8 h-8 transition-colors duration-300" 
-                  style={{ color: feature.color }}
-                />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {feature.description}
-              </p>
-              
-              <div 
-                className="absolute bottom-0 left-0 right-0 h-1 rounded-b-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ backgroundColor: feature.color }}
+          <div className="py-8 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-border">
+            <motion.div variants={itemVariants} className="flex flex-col gap-4">
+              <span className="text-xs tracking-widest text-muted-foreground">
+                {f01.index}
+              </span>
+              <span
+                className="inline-block w-2 h-2 rounded-full -mt-2"
+                style={{ backgroundColor: f01.color }}
               />
+              <div className="flex flex-col gap-2">
+                <h3 className="text-2xl font-semibold leading-snug text-foreground">
+                  {f01.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {f01.description}
+                </p>
+              </div>
             </motion.div>
-          ))}
+          </div>
+
+          <div className="py-8 md:px-8 border-b md:border-b-0 md:border-r border-border">
+            <FeatureItem feature={f02} />
+          </div>
+
+          <div className="py-8 md:pl-8">
+            <FeatureItem feature={f03} />
+          </div>
         </motion.div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          className="grid grid-cols-1 md:grid-cols-2"
+        >
+
+          <div className="py-8 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-border">
+            <FeatureItem feature={f04} titleSize="text-xl" />
+          </div>
+
+          <div className="py-8 md:pl-8 flex flex-col">
+            <div className="flex-1 pb-6 border-b border-border">
+              <FeatureItem feature={f05} titleSize="text-base" descSize="text-[13px]" />
+            </div>
+            <div className="flex-1 pt-6">
+              <FeatureItem feature={f06} titleSize="text-base" descSize="text-[13px]" />
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   )
