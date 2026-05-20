@@ -30,7 +30,7 @@ The landing page outlines 6 core pillars of the application:
 
 - **Framework:** [Next.js](https://nextjs.org/) (React)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) *(or your preferred styling solution)*
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Icons:** Lucide React
 - **Deployment:** [Vercel](https://vercel.com/)
 
