@@ -28,7 +28,7 @@ const features = [
     title: "Локален фийд",
     description:
       "Задавай въпроси, търси съвети за преподаватели или просто сподели забавна случка от деня с цялата университетска общност.",
-    color: "#ffc2f9",
+    color: "#e856da",
   },
   {
     index: "05",
@@ -172,11 +172,20 @@ export function FeaturesSection() {
           </div>
 
           <div className="py-8 md:pl-8 flex flex-col">
-            <div className="flex-1 pb-6 border-b border-border">
-              <FeatureItem feature={f05} titleSize="text-base" descSize="text-[13px]" />
+            <div className="pb-6">
+              <FeatureItem
+                feature={f05}
+                titleSize="text-base"
+                descSize="text-[13px]"
+              />
             </div>
-            <div className="flex-1 pt-6">
-              <FeatureItem feature={f06} titleSize="text-base" descSize="text-[13px]" />
+            <div className="border-b border-border -mx-8" />
+            <div className="pt-6">
+              <FeatureItem
+                feature={f06}
+                titleSize="text-base"
+                descSize="text-[13px]"
+              />
             </div>
           </div>
         </motion.div>
