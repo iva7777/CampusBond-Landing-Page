@@ -34,7 +34,7 @@ export function DownloadSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Изтегли{" "}
-            <span className="text-primary">CampusBond</span>
+            <span className="text-[#096271]">CampusBond</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Не оставай извън играта. Присъедини се към всички студенти, които вече използват CampusBond, за да се свързват, учат и забавляват заедно.
@@ -70,7 +70,8 @@ export function DownloadSection() {
                 bgColor="#FFFFFF"
                 fgColor="#333333"
                 level="H"
-                includeMargin={false}
+                role="img"
+                aria-label="QR code linking to the CampusBond iOS app on Apple Store"
               />
             </motion.div>
 
@@ -95,7 +96,7 @@ export function DownloadSection() {
             className="bg-card rounded-3xl p-8 shadow-xl border border-border/50 text-center"
           >
             <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center">
+              <div className="w-14 h-14 bg-[#096271] rounded-2xl flex items-center justify-center">
                 <Smartphone className="w-8 h-8 text-primary-foreground" />
               </div>
               <div className="text-left">
@@ -112,9 +113,10 @@ export function DownloadSection() {
                 value="https://play.google.com/store/apps/details?id=com.campusbond"
                 size={180}
                 bgColor="#FFFFFF"
-                fgColor="#0D91AF"
+                fgColor="#0d798b"
                 level="H"
-                includeMargin={false}
+                role="img"
+                aria-label="QR code linking to the CampusBond Android app on Google Play"
               />
             </motion.div>
 
@@ -123,7 +125,7 @@ export function DownloadSection() {
             </p>
 
             <Button
-              className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg font-semibold hover:cursor-pointer"
+              className="w-full rounded-full bg-[#096271] hover:bg-primary/90 text-primary-foreground py-6 text-lg font-semibold hover:cursor-pointer"
             >
               <Smartphone className="w-5 h-5 mr-2" />
               Google Play

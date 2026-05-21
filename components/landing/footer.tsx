@@ -60,6 +60,9 @@ export function Footer() {
               href="#"
               whileHover={{ scale: 1.1 }}
               className="w-10 h-10 rounded-full bg-card/10 flex items-center justify-center hover:bg-[#fa52e9] transition-colors"
+              aria-label="Visit Instagram profile"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Instagram className="w-5 h-5" />
             </motion.a>
@@ -67,6 +70,9 @@ export function Footer() {
               href="#"
               whileHover={{ scale: 1.1 }}
               className="w-10 h-10 rounded-full bg-card/10 flex items-center justify-center hover:bg-primary transition-colors"
+              aria-label="Visit X profile"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Twitter className="w-5 h-5" />
             </motion.a>
@@ -74,6 +80,9 @@ export function Footer() {
               href="#"
               whileHover={{ scale: 1.1 }}
               className="w-10 h-10 rounded-full bg-card/10 flex items-center justify-center hover:bg-[#1873fa] transition-colors"
+              aria-label="Visit LinkedIn profile"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin className="w-5 h-5" />
             </motion.a>
@@ -81,13 +90,16 @@ export function Footer() {
               href="#"
               whileHover={{ scale: 1.1 }}
               className="w-10 h-10 rounded-full bg-card/10 flex items-center justify-center hover:bg-[#f7ad0f] transition-colors"
+              aria-label="Write us an email"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Mail className="w-5 h-5" />
             </motion.a>
           </div>
         </div>
 
-        <div className="text-center mt-8 text-card/40 text-sm">
+        <div className="text-center mt-8 text-card/90 text-sm">
           © {new Date().getFullYear()} CampusBond. Всички права запазени.
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function BackToTop() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
-                    className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-11 h-11 rounded-full bg-primary 
+                    className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-11 h-11 rounded-full bg-[#096271] 
                     text-primary-foreground shadow-lg hover:bg-primary/90 transition-colors hover:cursor-pointer"
                     aria-label="Back to top"
                 >

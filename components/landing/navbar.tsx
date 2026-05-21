@@ -20,7 +20,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center gap-3">
             <img src="/vector.svg" alt="CampusBond Logo" />
-            <span className="text-xl font-bold text-primary">CampusBond</span>
+            <span className="text-xl font-bold text-[#096271]">CampusBond</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -31,7 +31,7 @@ export function Navbar() {
               Коментари
             </a>
             <Link href="#download">
-              <Button className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-6 hover:cursor-pointer">
+              <Button className="rounded-full bg-[#096271] hover:bg-primary/90 text-primary-foreground px-6 hover:cursor-pointer">
                 Изтегли приложението
               </Button>
             </Link>

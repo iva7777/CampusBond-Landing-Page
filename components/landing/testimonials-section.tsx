@@ -43,7 +43,7 @@ export function TestimonialsSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Обичано от{" "}
-            <span className="text-primary">студентите</span>
+            <span className="text-[#096271]">студентите</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Присъедини се към стотици студенти, които промениха преживяването си в университета.
@@ -75,7 +75,7 @@ export function TestimonialsSection() {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                  <span className="text-primary font-bold">{testimonial.avatar}</span>
+                  <span className="text-[#096271] font-bold">{testimonial.avatar}</span>
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">{testimonial.name}</div>

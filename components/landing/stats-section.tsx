@@ -20,7 +20,7 @@ function StatValue({ value, suffix, decimals = 0 }: { value: number; suffix: str
 
 export function StatsSection() {
   return (
-    <section className="py-20 bg-primary relative overflow-hidden">
+    <section className="py-20 bg-[#096271] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 hidden md:block">
         <div className="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-full" />
         <div className="absolute bottom-10 right-10 w-48 h-48 border-4 border-white rounded-full" />

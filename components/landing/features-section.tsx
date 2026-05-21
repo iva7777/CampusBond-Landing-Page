@@ -115,7 +115,7 @@ export function FeaturesSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Всичко, от което се нуждаеш, за да{" "}
-            <span className="text-primary">успееш</span>
+            <span className="text-[#096271]">успееш</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Какво ти дава CampusBond?

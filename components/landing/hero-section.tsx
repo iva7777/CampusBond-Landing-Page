@@ -44,7 +44,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-5xl md:text-7xl font-bold text-[#0d798b] mb-4 tracking-tight"
+            className="text-5xl md:text-7xl font-bold text-[#096271] mb-4 tracking-tight"
           >
             CampusBond
           </motion.h1>
@@ -78,7 +78,7 @@ export function HeroSection() {
             <Link href="#download">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 hover:cursor-pointer text-primary-foreground rounded-full px-8 py-6 text-lg font-semibold 
+                className="bg-[#096271] hover:bg-primary/90 hover:cursor-pointer text-primary-foreground rounded-full px-8 py-6 text-lg font-semibold 
                 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 Присъедини се сега
@@ -89,7 +89,7 @@ export function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 py-6 text-lg font-semibold border-2 border-primary text-primary hover:cursor-pointer hover:bg-primary 
+                className="rounded-full px-8 py-6 text-lg font-semibold border-2 border-[#096271] text-[#096271] hover:cursor-pointer hover:bg-[#0d798b] 
                 hover:text-primary-foreground transition-all duration-300"
               >
                 Научи повече
@@ -107,7 +107,7 @@ export function HeroSection() {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="inline-flex flex-col items-center text-primary/60 cursor-pointer hover:text-primary transition-colors"
+                className="inline-flex flex-col items-center text-[#096271] cursor-pointer hover:text-primary transition-colors"
               >
                 <span className="text-sm font-medium mb-2">Продължи напред</span>
                 <ArrowDown className="w-6 h-6" />
