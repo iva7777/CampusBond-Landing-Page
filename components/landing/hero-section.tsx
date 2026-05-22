@@ -89,7 +89,7 @@ export function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 py-6 text-lg font-semibold border-2 border-[#096271] text-[#096271] hover:cursor-pointer hover:bg-[#0d798b] 
+                className="rounded-full px-8 py-6 text-lg bg-white font-semibold border-2 border-[#096271] text-[#096271] hover:cursor-pointer hover:bg-[#0d798b] 
                 hover:text-primary-foreground transition-all duration-300"
               >
                 Научи повече

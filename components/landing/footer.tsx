@@ -20,7 +20,7 @@ export function Footer() {
 
           {/* Product */}
           <div>
-            <h4 className="font-semibold text-card mb-4">За приложението</h4>
+            <h3 className="font-semibold text-card mb-4">За приложението</h3>
             <ul className="space-y-3 text-card/70">
               <li><a href="#" className="hover:text-primary transition-colors">Какво представлява?</a></li>
               <li><a href="#features" className="hover:text-primary transition-colors">Характеристики</a></li>
@@ -31,7 +31,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-card mb-4">За CampusBond</h4>
+            <h3 className="font-semibold text-card mb-4">За CampusBond</h3>
             <ul className="space-y-3 text-card/70">
               <li><a href="#" className="hover:text-primary transition-colors">За нас</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Кариери</a></li>
@@ -41,7 +41,7 @@ export function Footer() {
 
           {/* Support */}
           <div>
-            <h4 className="font-semibold text-card mb-4">Помощ</h4>
+            <h3 className="font-semibold text-card mb-4">Помощ</h3>
             <ul className="space-y-3 text-card/70">
               <li><a href="#" className="hover:text-primary transition-colors">Политика за поверителност</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Условия за ползване</a></li>
@@ -51,7 +51,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-card/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-card/60 text-sm flex items-center gap-1">
+          <p className="text-card/70 text-sm flex items-center gap-1">
             Направено с <Heart className="w-4 h-4 text-[#ef8708] fill-[#ef8708]" /> за всички студенти
           </p>
 

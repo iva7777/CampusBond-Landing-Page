@@ -76,7 +76,7 @@ function FeatureItem({
     <motion.div variants={itemVariants} className="flex flex-col gap-4">
       <span
         className="text-xs tracking-widest"
-        style={{ color: "oklch(var(--muted-foreground))" }}
+        style={{ color: "oklch(var(--foreground))" }}
       >
         {feature.index}
       </span>
@@ -92,7 +92,7 @@ function FeatureItem({
         >
           {feature.title}
         </h3>
-        <p className={`${descSize} text-muted-foreground leading-relaxed`}>
+        <p className={`${descSize} text-foreground leading-relaxed`}>
           {feature.description}
         </p>
       </div>
@@ -117,7 +117,7 @@ export function FeaturesSection() {
             Всичко, от което се нуждаеш, за да{" "}
             <span className="text-[#096271]">успееш</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-foreground max-w-2xl mx-auto">
             Какво ти дава CampusBond?
           </p>
         </motion.div>
@@ -132,7 +132,7 @@ export function FeaturesSection() {
         >
           <div className="py-8 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-border">
             <motion.div variants={itemVariants} className="flex flex-col gap-4">
-              <span className="text-xs tracking-widest text-muted-foreground">
+              <span className="text-xs tracking-widest text-foreground">
                 {f01.index}
               </span>
               <span
@@ -143,7 +143,7 @@ export function FeaturesSection() {
                 <h3 className="text-2xl font-semibold leading-snug text-foreground">
                   {f01.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-foreground leading-relaxed">
                   {f01.description}
                 </p>
               </div>

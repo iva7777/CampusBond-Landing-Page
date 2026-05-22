@@ -51,7 +51,7 @@ export function StatsSection() {
                   decimals={stat.decimals}
                 />
               </div>
-              <div className="text-white/80 font-medium">
+              <div className="text-white font-medium">
                 {stat.label}
               </div>
             </motion.div>
