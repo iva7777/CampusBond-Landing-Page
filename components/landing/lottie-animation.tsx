@@ -6,7 +6,7 @@ export default function LottieAnimation() {
     return (
         <Lottie
             animationData={animationData}
-            loop={true}
+            loop={false}
             autoplay={true}
             style={{ width: 200, height: 200 }}
         />
